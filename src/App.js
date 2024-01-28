@@ -10,7 +10,6 @@ const messages = [
 function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
-
   function handlePrevious() {
     if (step > 1) setStep(step - 1);
   }
@@ -27,7 +26,7 @@ function App() {
           setIsOpen(!isOpen);
         }}
       >
-        &times;
+        {isOpen ? <>&times;</> : <>&#43;</>}
       </button>
       {isOpen && (
         <div className="steps">
