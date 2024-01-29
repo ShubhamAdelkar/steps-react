@@ -89,3 +89,28 @@ h3 {
 .close:hover {
   color: #7950f2;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .steps {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .numbers {
+    flex-direction: column;
+  }
+
+  .numbers>div {
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    margin-bottom: 10px;
+  }
+}
